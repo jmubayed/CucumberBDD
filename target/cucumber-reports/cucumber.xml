@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="38.749243">
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validate search cars page" time="24.268742">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id='makes']&quot;}&#10;  (Session info: chrome=85.0.4183.102)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: bda6e612c965daf03f62a2ad3b439eac&#10;*** Element info: {Using=xpath, value=//select[@id='makes']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy37.getTagName(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)&#13;&#10;&#9;at com.qa.pages.actions.CarsSearchPageActions.selectCarMake(CarsSearchPageActions.java:23)&#13;&#10;&#9;at com.qa.steps.SearchCarsSteps.select_carbrand_as_from_AnyMake_DropDown(SearchCarsSteps.java:50)&#13;&#10;&#9;at ✽.select carbrand as &quot;BMW&quot; from AnyMake DropDown(file:src/test/resources/features/SearchCars.feature:15)&#13;&#10;"><![CDATA[Given I on the Home page "https://www.carsguide.com.au" of CarsGuide website.passed
+When I move to Car for Sale menu............................................passed
+And click on "Search Cars" link.............................................passed
+And select carbrand as "BMW" from AnyMake DropDown..........................failed
+And select carmodel as "1 Series" from SelectModel dropdown.................skipped
+And select location as "NSW - Hunter" from Any SelecLocation dropdown.......skipped
+And select price as "$1,000" from price dropdown............................skipped
+And click on Find_My_Next_Car button........................................skipped
+Then I should see list of searched cars.....................................skipped
+And the page title should be "Bmw 1 Series Under 1000 for Sale Hunter NSW | carsguide".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bda6e612c965daf03f62a2ad3b439eac
+*** Element info: {Using=xpath, value=//select[@id='makes']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy37.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+	at com.qa.pages.actions.CarsSearchPageActions.selectCarMake(CarsSearchPageActions.java:23)
+	at com.qa.steps.SearchCarsSteps.select_carbrand_as_from_AnyMake_DropDown(SearchCarsSteps.java:50)
+	at ✽.select carbrand as "BMW" from AnyMake DropDown(file:src/test/resources/features/SearchCars.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Used Search cars page is working fine." name="Validate used search cars page" time="14.480501">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id='makes']&quot;}&#10;  (Session info: chrome=85.0.4183.102)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 73a8062f042570bb734c24394beea1c2&#10;*** Element info: {Using=xpath, value=//select[@id='makes']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy37.getTagName(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)&#13;&#10;&#9;at com.qa.pages.actions.UsedCarsSearchPageActions.selectCarMake(UsedCarsSearchPageActions.java:22)&#13;&#10;&#9;at com.qa.steps.UsedCarsSteps.select_carbrand_as_from_AnyMake_DropDown_on_Used_Search_Car_page(UsedCarsSteps.java:25)&#13;&#10;&#9;at ✽.select carbrand as &quot;Audi&quot; from AnyMake DropDown on Used Search Car page(file:src/test/resources/features/UsedCarSearch.feature:15)&#13;&#10;"><![CDATA[Given I on the Home page "https://www.carsguide.com.au" of CarsGuide website.passed
+When I move to Car for Sale menu............................................passed
+And click on "Used" link on Used Search Car page............................passed
+And select carbrand as "Audi" from AnyMake DropDown on Used Search Car page.failed
+And select car model on Used Search Car page................................skipped
+And select location as "ACT - All" from Any SelecLocation dropdown on Used Search Car page.skipped
+And select price as "$2,000" from price dropdown on Used Search Car page....skipped
+And click on Find_My_Next_Car button on Used Search Car page................skipped
+Then I should see list of searched cars on Used Search Car page.............skipped
+And the page title should be "Used Audi A4 Under 2000 for Sale ACT | carsguide".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 73a8062f042570bb734c24394beea1c2
+*** Element info: {Using=xpath, value=//select[@id='makes']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy37.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+	at com.qa.pages.actions.UsedCarsSearchPageActions.selectCarMake(UsedCarsSearchPageActions.java:22)
+	at com.qa.steps.UsedCarsSteps.select_carbrand_as_from_AnyMake_DropDown_on_Used_Search_Car_page(UsedCarsSteps.java:25)
+	at ✽.select carbrand as "Audi" from AnyMake DropDown on Used Search Car page(file:src/test/resources/features/UsedCarSearch.feature:15)
+]]></failure>
+    </testcase>
+</testsuite>

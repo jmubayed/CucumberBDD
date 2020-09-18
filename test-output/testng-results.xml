@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-18T22:53:56Z" name="Default suite" finished-at="2020-09-18T22:54:37Z" duration-ms="40687">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runner.RunCuke@7d9d0818]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2020-09-18T22:53:56Z" name="Default test" finished-at="2020-09-18T22:54:37Z" duration-ms="40687">
+      <class name="com.qa.runner.RunCuke">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.qa.runner.RunCuke@7d9d0818]" started-at="2020-09-18T22:53:56Z" name="setUpClass" finished-at="2020-09-18T22:53:57Z" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runner.RunCuke@7d9d0818]" started-at="2020-09-18T22:53:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-18T22:54:21Z" duration-ms="24573" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search cars page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate Search cars page is working fine."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bda6e612c965daf03f62a2ad3b439eac
+*** Element info: {Using=xpath, value=//select[@id='makes']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bda6e612c965daf03f62a2ad3b439eac
+*** Element info: {Using=xpath, value=//select[@id='makes']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy37.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+at com.qa.pages.actions.CarsSearchPageActions.selectCarMake(CarsSearchPageActions.java:23)
+at com.qa.steps.SearchCarsSteps.select_carbrand_as_from_AnyMake_DropDown(SearchCarsSteps.java:50)
+at ✽.select carbrand as "BMW" from AnyMake DropDown(file:src/test/resources/features/SearchCars.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runner.RunCuke@7d9d0818]" started-at="2020-09-18T22:54:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-18T22:54:36Z" duration-ms="14489" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate used search cars page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate Used Search cars page is working fine."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 73a8062f042570bb734c24394beea1c2
+*** Element info: {Using=xpath, value=//select[@id='makes']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='makes']"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-4OFRI5EK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\jmubayed\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 73a8062f042570bb734c24394beea1c2
+*** Element info: {Using=xpath, value=//select[@id='makes']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy37.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+at com.qa.pages.actions.UsedCarsSearchPageActions.selectCarMake(UsedCarsSearchPageActions.java:22)
+at com.qa.steps.UsedCarsSteps.select_carbrand_as_from_AnyMake_DropDown_on_Used_Search_Car_page(UsedCarsSteps.java:25)
+at ✽.select carbrand as "Audi" from AnyMake DropDown on Used Search Car page(file:src/test/resources/features/UsedCarSearch.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.qa.runner.RunCuke@7d9d0818]" started-at="2020-09-18T22:54:36Z" name="tearDownClass" finished-at="2020-09-18T22:54:37Z" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.runner.RunCuke -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
